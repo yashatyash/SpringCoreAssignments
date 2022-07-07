@@ -3,8 +3,8 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean class="springcore.assignment07.Array1" id="arr1ID">
-        <property name="array1">
+    <bean class="com.yash.springcore.assignments.Ques7.Arr1" id="arr1">
+        <property name="arr1">
             <array>
                 <value>10</value>
                 <value>30</value>
@@ -15,7 +15,7 @@
         </property>
     </bean>
 
-    <bean class="springcore.assignment07.Array2" id="arr2ID">
+    <bean class="com.yash.springcore.assignments.Ques7.Arr2" id="arr2">
         <property name="array2">
             <array>
                 <value>20</value>
