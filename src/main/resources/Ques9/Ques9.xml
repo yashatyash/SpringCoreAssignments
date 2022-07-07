@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+
+    <context:annotation-config />
+
+    <bean id="city1" class="com.yash.springcore.assignments.Ques9.Distance">
+        <property name="fromCity" value="mumbai"/>
+        <property name="toCity" value="bangalore"/>
+        <property name="distance" value="992"/>
+    </bean>
+
+    <bean id="city2" class="com.yash.springcore.assignments.Ques9.Distance">
+        <property name="fromCity" value="pune"/>
+        <property name="toCity" value="kolhapur"/>
+        <property name="distance" value="250"/>
+    </bean>
+
+    <bean id="city3" class="com.yash.springcore.assignments.Ques9.Distance">
+        <property name="fromCity" value="pune"/>
+        <property name="toCity" value="mumbai"/>
+        <property name="distance" value="150"/>
+    </bean>
+
+    <bean id="city4" class="com.yash.springcore.assignments.Ques9.Distance">
+        <property name="fromCity" value="indore"/>
+        <property name="toCity" value="pune"/>
+        <property name="distance" value="590"/>
+    </bean>
+</beans>

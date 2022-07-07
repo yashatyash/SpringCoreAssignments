@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean class="com.yash.springcore.assignments.Ques4.Department" id="dID1">
+        <property name="dId" value="101" />
+        <property name="dName" value="CSE" />
+    </bean>
+
+    <bean class="com.yash.springcore.assignments.Ques4.Department" id="dID2">
+        <property name="dId" value="102" />
+        <property name="dName" value="Mechanical" />
+    </bean>
+
+    <bean class="com.yash.springcore.assignments.Ques4.Employee" id="eId1" autowire="byType">
+        <property name="eId" value="1001" />
+        <property name="eName" value="Sumit Mathur" />
+        <property name="salary" value="50000.00f" />
+        <property name="department" ref="dID1" />
+    </bean>
+
+    <bean class="com.yash.springcore.assignments.Ques4.Employee" id="eId2" autowire="byType">
+        <property name="eId" value="1552" />
+        <property name="eName" value="Kavendra Kumar" />
+        <property name="salary" value="35000f" />
+        <property name="department" ref="dID2" />
+    </bean>
+
+</beans>

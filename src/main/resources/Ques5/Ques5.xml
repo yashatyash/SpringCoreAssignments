@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean class="com.yash.springcore.assignments.Ques5.FindMax" id="maxID">
+        <property name="max">
+            <list>
+                <value>90</value>
+                <value>95</value>
+                <value>85</value>
+                <value>100</value>
+                <value>60</value>
+            </list>
+        </property>
+    </bean>
+
+</beans>
