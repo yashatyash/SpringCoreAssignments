@@ -1,30 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context-3.0.xsd">
 
-    <bean class="com.yash.springcore.assignments.Ques7.Arr1" id="arr1">
-        <property name="arr1">
+    <context:annotation-config/>
+
+    <bean id="arr2" class= "com.yash.springcore.assignments.Ques7.Arr2">
+        <constructor-arg>
             <array>
-                <value>10</value>
-                <value>30</value>
-                <value>50</value>
-                <value>60</value>
-                <value>90</value>
+                <value>101</value>
+                <value>202</value>
+                <value>303</value>
             </array>
-        </property>
+        </constructor-arg>
+    </bean>
+    <bean id="arr1" class="com.yash.springcore.assignments.Ques7.Arr1">
+        <constructor-arg>
+            <array>
+                <value>67</value>
+                <value>89</value>
+                <value>400</value>
+            </array>
+        </constructor-arg>
+        <constructor-arg ref="arr2"/>
     </bean>
 
-    <bean class="com.yash.springcore.assignments.Ques7.Arr2" id="arr2">
-        <property name="array2">
-            <array>
-                <value>20</value>
-                <value>40</value>
-                <value>70</value>
-                <value>80</value>
-                <value>100</value>
-            </array>
-        </property>
-    </bean>
 
 </beans>

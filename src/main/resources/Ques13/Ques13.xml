@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="cust1" class="com.yash.springcore.assignments.Ques13.MovieDetails">
+        <property name="movieName" value="Pushpa"/>
+        <property name="showTime" value="3-6"/>
+        <property name="ticketPrice" value="50"/>
+        <property name="businessInCore" value="830 Crore"/>
+    </bean>
+</beans>

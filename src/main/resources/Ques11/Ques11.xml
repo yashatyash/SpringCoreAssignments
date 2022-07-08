@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="result1" class="com.yash.springcore.assignments.Ques11.Result">
+        <constructor-arg value="56"/>
+        <constructor-arg value="80"/>
+        <constructor-arg value="85"/>
+        <constructor-arg value="77"/>
+        <constructor-arg value="298"/>
+    </bean>
+
+    <bean id="student1" class="com.yash.springcore.assignments.Ques11.Student">
+        <constructor-arg value="Nikhil"/>
+        <constructor-arg value="111"/>
+        <constructor-arg value="17-11-1996"/>
+        <constructor-arg value="12th"/>
+        <constructor-arg value="B"/>
+        <constructor-arg ref="result1"/>
+    </bean>
+
+    <bean id="result2" class="com.yash.springcore.assignments.Ques11.Result">
+        <constructor-arg value="66"/>
+        <constructor-arg value="87"/>
+        <constructor-arg value="75"/>
+        <constructor-arg value="67"/>
+        <constructor-arg value="295"/>
+    </bean>
+
+    <bean id="student2" class="com.yash.springcore.assignments.Ques11.Student">
+        <constructor-arg value="Payal"/>
+        <constructor-arg value="112"/>
+        <constructor-arg value="17-5-96"/>
+        <constructor-arg value="10th"/>
+        <constructor-arg value="A"/>
+        <constructor-arg ref="result2"/>
+    </bean>
+
+</beans>

@@ -3,7 +3,7 @@ package com.yash.springcore.assignments.Ques7;
 public class Arr1 {
     int a[]=new int[5];
     Arr2 obj2;
-    Arr1(int[] a, Arr2 obj2) {
+    public Arr1(int[] a, Arr2 obj2) {
         super();
         this.a = a;
         this.obj2 = obj2;

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="CustID" class="com.yash.springcore.assignments.Ques15.Customer">
+        <property name="id" value="1"/>
+        <property name="custName" value="Yash"/>
+        <property name="item" ref="ItemID"/>
+    </bean>
+
+    <bean id="ItemID" class="com.yash.springcore.assignments.Ques15.Item">
+        <property name="id" value="2"/>
+        <property name="itemName" value="shirt"/>
+        <property name="price" value="400"/>
+        <property name="cat" ref="CatID"/>
+    </bean>
+
+    <bean id="CatID" class="com.yash.springcore.assignments.Ques15.Category">
+        <property name="catName" value="Cloth"/>
+    </bean>
+
+</beans>
