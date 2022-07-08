@@ -1,5 +1,9 @@
 package com.yash.springcore.assignments.Ques15;
 
+//WAP in which three beans need to be created item, category and customer.
+// Category injected in item and item injected in customer.
+// Now print all item purchased by customer.
+
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
